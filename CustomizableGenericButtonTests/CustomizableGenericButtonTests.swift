@@ -16,8 +16,4 @@ class CustomizableGenericButtonTests: XCTestCase {
         customizableGenericButton = CustomizableGenericButton()
     }
 
-    func testAdd() {
-            XCTAssertEqual(customizableGenericButton.add(a: 1, b: 1), 2)
-    }
-
 }

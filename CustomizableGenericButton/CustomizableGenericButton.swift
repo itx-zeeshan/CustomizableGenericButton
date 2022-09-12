@@ -4,18 +4,64 @@
 //  Created by Zeeshan Habib on 13/09/2022.
 //
 
-import Foundation
+import UIKit
 
-public final class CustomizableGenericButton {
+enum GenericButtonType {
+    case imgBtn
+    case noImgBtn
+    case titleBtn
+}
 
-    let name = "CustomizableGenericButton"
+protocol CustomizableGenericButtonDelegate {
+    func onButtonTapped()
+}
+
+public final class CustomizableGenericButton: UIView, UIGestureRecognizerDelegate {
+
+    //MARK: - IBOutlet
+    @IBOutlet weak var vwBG: UIView!
+    @IBOutlet weak var imgView: UIView!
+    @IBOutlet weak var imgButton: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubTitle: UILabel!
     
-    public func add(a: Int, b: Int) -> Int {
-        return a + b
+    //MARK: - Variables
+    var delegate: CustomizableGenericButtonDelegate?
+    
+    //MARK: - Functionalities
+    private func setupView() {
+        
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.cornerRadius = 10.0
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(btnActionClick(_:)))
+        tapGesture.delegate = self
+        self.addGestureRecognizer(tapGesture)
     }
     
-    public func sub(a: Int, b: Int) -> Int {
-        return a - b
+    func btnSetup(title: String, subTitle: String = "", iconName: String = "", type: GenericButtonType = .titleBtn) {
+        
+        self.setupView()
+        
+        switch type {
+        case .imgBtn:
+            imgView.isHidden = false
+            imgButton.image = UIImage(systemName: iconName)
+            lblTitle.text = title
+            lblSubTitle.text = subTitle
+        case .noImgBtn:
+            lblTitle.text = title
+            lblSubTitle.text = subTitle
+        case .titleBtn:
+            lblTitle.text = title
+            lblSubTitle.text = subTitle
+        }
+    }
+    
+    
+    @objc private func btnActionClick(_ sender: UIView) {
+        self.delegate?.onButtonTapped()
     }
     
 }

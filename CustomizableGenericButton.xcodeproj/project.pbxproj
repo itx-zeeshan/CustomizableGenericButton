@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B7DC36E28CFF29100685D59 /* CustomizableGenericButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DC36D28CFF29100685D59 /* CustomizableGenericButton.xib */; };
 		0B97BE8F28CFCE2300106C58 /* CustomizableGenericButton.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0B97BE8E28CFCE2300106C58 /* CustomizableGenericButton.docc */; };
 		0B97BE9528CFCE2300106C58 /* CustomizableGenericButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B97BE8A28CFCE2300106C58 /* CustomizableGenericButton.framework */; };
 		0B97BE9A28CFCE2300106C58 /* CustomizableGenericButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97BE9928CFCE2300106C58 /* CustomizableGenericButtonTests.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B7DC36D28CFF29100685D59 /* CustomizableGenericButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizableGenericButton.xib; sourceTree = "<group>"; };
 		0B97BE8A28CFCE2300106C58 /* CustomizableGenericButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomizableGenericButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B97BE8D28CFCE2300106C58 /* CustomizableGenericButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomizableGenericButton.h; sourceTree = "<group>"; };
 		0B97BE8E28CFCE2300106C58 /* CustomizableGenericButton.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CustomizableGenericButton.docc; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				0B97BE8D28CFCE2300106C58 /* CustomizableGenericButton.h */,
 				0B97BE8E28CFCE2300106C58 /* CustomizableGenericButton.docc */,
 				0B97BEB828CFD1C600106C58 /* CustomizableGenericButton.swift */,
+				0B7DC36D28CFF29100685D59 /* CustomizableGenericButton.xib */,
 			);
 			path = CustomizableGenericButton;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7DC36E28CFF29100685D59 /* CustomizableGenericButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
