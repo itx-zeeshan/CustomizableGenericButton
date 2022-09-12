@@ -9,7 +9,7 @@ CustomizableGenericButton library written in swift
                    DESC
 
   spec.homepage     = "https://github.com/itx-zeeshan/CustomizableGenericButton"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "GNU", :file => "LICENSE" }
   spec.author       = { "Zeeshan Habib" => "zesbox6@gmail.com" }
 
   spec.ios.deployment_target = "13.0"
