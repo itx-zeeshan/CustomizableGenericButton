@@ -11,6 +11,10 @@
 		0B97BE9528CFCE2300106C58 /* CustomizableGenericButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B97BE8A28CFCE2300106C58 /* CustomizableGenericButton.framework */; };
 		0B97BE9A28CFCE2300106C58 /* CustomizableGenericButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97BE9928CFCE2300106C58 /* CustomizableGenericButtonTests.swift */; };
 		0B97BE9B28CFCE2300106C58 /* CustomizableGenericButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B97BE8D28CFCE2300106C58 /* CustomizableGenericButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B97BEAB28CFCF4700106C58 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B97BEAA28CFCF4700106C58 /* QuickLook.framework */; };
+		0B97BEAE28CFCF4700106C58 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97BEAD28CFCF4700106C58 /* PreviewViewController.swift */; };
+		0B97BEB028CFCF4700106C58 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97BEAF28CFCF4700106C58 /* PreviewProvider.swift */; };
+		0B97BEB328CFCF4700106C58 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B97BEB128CFCF4700106C58 /* MainInterface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,12 @@
 		0B97BE8E28CFCE2300106C58 /* CustomizableGenericButton.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CustomizableGenericButton.docc; sourceTree = "<group>"; };
 		0B97BE9428CFCE2300106C58 /* CustomizableGenericButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomizableGenericButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B97BE9928CFCE2300106C58 /* CustomizableGenericButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableGenericButtonTests.swift; sourceTree = "<group>"; };
+		0B97BEA828CFCF4700106C58 /* CustomizableGenericButtonExample.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomizableGenericButtonExample.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B97BEAA28CFCF4700106C58 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		0B97BEAD28CFCF4700106C58 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		0B97BEAF28CFCF4700106C58 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		0B97BEB228CFCF4700106C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0B97BEB428CFCF4700106C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B97BEA528CFCF4700106C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B97BEAB28CFCF4700106C58 /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +73,8 @@
 			children = (
 				0B97BE8C28CFCE2300106C58 /* CustomizableGenericButton */,
 				0B97BE9828CFCE2300106C58 /* CustomizableGenericButtonTests */,
+				0B97BEAC28CFCF4700106C58 /* CustomizableGenericButtonExample */,
+				0B97BEA928CFCF4700106C58 /* Frameworks */,
 				0B97BE8B28CFCE2300106C58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +84,7 @@
 			children = (
 				0B97BE8A28CFCE2300106C58 /* CustomizableGenericButton.framework */,
 				0B97BE9428CFCE2300106C58 /* CustomizableGenericButtonTests.xctest */,
+				0B97BEA828CFCF4700106C58 /* CustomizableGenericButtonExample.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +104,25 @@
 				0B97BE9928CFCE2300106C58 /* CustomizableGenericButtonTests.swift */,
 			);
 			path = CustomizableGenericButtonTests;
+			sourceTree = "<group>";
+		};
+		0B97BEA928CFCF4700106C58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B97BEAA28CFCF4700106C58 /* QuickLook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B97BEAC28CFCF4700106C58 /* CustomizableGenericButtonExample */ = {
+			isa = PBXGroup;
+			children = (
+				0B97BEAD28CFCF4700106C58 /* PreviewViewController.swift */,
+				0B97BEAF28CFCF4700106C58 /* PreviewProvider.swift */,
+				0B97BEB128CFCF4700106C58 /* MainInterface.storyboard */,
+				0B97BEB428CFCF4700106C58 /* Info.plist */,
+			);
+			path = CustomizableGenericButtonExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +175,23 @@
 			productReference = 0B97BE9428CFCE2300106C58 /* CustomizableGenericButtonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0B97BEA728CFCF4700106C58 /* CustomizableGenericButtonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B97BEB528CFCF4700106C58 /* Build configuration list for PBXNativeTarget "CustomizableGenericButtonExample" */;
+			buildPhases = (
+				0B97BEA428CFCF4700106C58 /* Sources */,
+				0B97BEA528CFCF4700106C58 /* Frameworks */,
+				0B97BEA628CFCF4700106C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomizableGenericButtonExample;
+			productName = CustomizableGenericButtonExample;
+			productReference = 0B97BEA828CFCF4700106C58 /* CustomizableGenericButtonExample.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +206,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					0B97BE9328CFCE2300106C58 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0B97BEA728CFCF4700106C58 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -168,6 +228,7 @@
 			targets = (
 				0B97BE8928CFCE2300106C58 /* CustomizableGenericButton */,
 				0B97BE9328CFCE2300106C58 /* CustomizableGenericButtonTests */,
+				0B97BEA728CFCF4700106C58 /* CustomizableGenericButtonExample */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +245,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B97BEA628CFCF4700106C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B97BEB328CFCF4700106C58 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +275,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B97BEA428CFCF4700106C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B97BEAE28CFCF4700106C58 /* PreviewViewController.swift in Sources */,
+				0B97BEB028CFCF4700106C58 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -215,6 +293,17 @@
 			targetProxy = 0B97BE9628CFCE2300106C58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B97BEB128CFCF4700106C58 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B97BEB228CFCF4700106C58 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0B97BE9C28CFCE2300106C58 /* Debug */ = {
@@ -425,6 +514,56 @@
 			};
 			name = Release;
 		};
+		0B97BEB628CFCF4700106C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D29HA2PBMK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomizableGenericButtonExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomizableGenericButtonExample;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CustomizableGenericButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B97BEB728CFCF4700106C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D29HA2PBMK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomizableGenericButtonExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomizableGenericButtonExample;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CustomizableGenericButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +590,15 @@
 			buildConfigurations = (
 				0B97BEA228CFCE2300106C58 /* Debug */,
 				0B97BEA328CFCE2300106C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B97BEB528CFCF4700106C58 /* Build configuration list for PBXNativeTarget "CustomizableGenericButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B97BEB628CFCF4700106C58 /* Debug */,
+				0B97BEB728CFCF4700106C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
