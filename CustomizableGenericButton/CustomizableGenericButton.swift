@@ -188,7 +188,7 @@ extension CustomizableGenericButton: CAAnimationDelegate{
         
         // Set animation to be consistent on completion
         animation.isRemovedOnCompletion = false
-        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.fillMode = .both
         
         // Add animation to the view's layer
         let fade = CAKeyframeAnimation(keyPath: "opacity")
