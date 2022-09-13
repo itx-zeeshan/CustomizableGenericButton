@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CustomizableGenericButton"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "CustomizableGenericButton library written in swift"
 
   spec.description  = <<-DESC
@@ -18,7 +18,6 @@ CustomizableGenericButton library written in swift for customize buttons
 
   spec.platform = :ios
   spec.ios.deployment_target = "13.0"
-  spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/itx-zeeshan/CustomizableGenericButton.git", :tag => "#{spec.version}" }
   spec.source_files  = "CustomizableGenericButton/**/*.{h,m,swift}"

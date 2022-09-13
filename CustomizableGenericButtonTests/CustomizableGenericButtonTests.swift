@@ -6,14 +6,11 @@
 //
 
 import XCTest
-@testable import CustomizableGenericButton
+import CustomizableGenericButton
 
 class CustomizableGenericButtonTests: XCTestCase {
-
-    var customizableGenericButton: CustomizableGenericButton!
-
-    override func setUp() {
-        customizableGenericButton = CustomizableGenericButton()
+    
+    func testCustomizableGenericButton() {
     }
-
+    
 }
