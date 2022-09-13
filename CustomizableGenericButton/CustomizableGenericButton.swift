@@ -1,5 +1,6 @@
 //
 //  CustomizableGenericButton.swift
+//  CustomizableGenericButton
 //
 //  Created by Zeeshan Habib on 13/09/2022.
 //
@@ -16,8 +17,8 @@ protocol CustomizableGenericButtonDelegate {
     func onButtonTapped()
 }
 
-public final class CustomizableGenericButton: UIView, UIGestureRecognizerDelegate {
-
+class CustomizableGenericButton: UIControl, UIGestureRecognizerDelegate {
+    
     //MARK: - IBOutlet
     @IBOutlet weak var vwBG: UIView!
     @IBOutlet weak var imgView: UIView!
@@ -30,14 +31,10 @@ public final class CustomizableGenericButton: UIView, UIGestureRecognizerDelegat
     
     //MARK: - Functionalities
     private func setupView() {
-        
-        self.layer.borderWidth = 1.0
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.cornerRadius = 10.0
-        
+        self.vwBG.createButton()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(btnActionClick(_:)))
         tapGesture.delegate = self
-        self.addGestureRecognizer(tapGesture)
+        self.vwBG.addGestureRecognizer(tapGesture)
     }
     
     func btnSetup(title: String, subTitle: String = "", iconName: String = "", type: GenericButtonType = .titleBtn) {
@@ -59,9 +56,28 @@ public final class CustomizableGenericButton: UIView, UIGestureRecognizerDelegat
         }
     }
     
-    
     @objc private func btnActionClick(_ sender: UIView) {
         self.delegate?.onButtonTapped()
     }
     
+}
+
+extension UIView {
+    open func createButton() {
+        configView()
+        configButtonView()
+    }
+    
+    private func configView() {
+        self.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        self.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        self.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    }
+    
+    private func configButtonView() {
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.cornerRadius = 10.0
+    }
 }
